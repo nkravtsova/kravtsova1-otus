@@ -9,10 +9,13 @@ var fn2 = () => new Promise(resolve => {
 })
 
 function promiseReduce(asyncFunctions, reduce, initialValue) {
+	let accValue=initialValue;
   return asyncFunctions.reduce((p, func) => {
-	  let accValue=initialValue;
-	  return p.then(function(value) {
-		return func().then(reduce(accValue,value));
+	  return p.then(() => {
+		  return func().then((result) => {
+        accValue = reduce(accValue,result);
+        return accValue
+      });
 	  });
   }, Promise.resolve());
 }
