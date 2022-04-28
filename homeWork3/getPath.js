@@ -1,6 +1,4 @@
-function getPath(el){
-	let element = document.querySelector(el);
-	let currentEl = element;
+function getPath(currentEl){
 	let path = '';
 
 	while (true) {
@@ -10,7 +8,7 @@ function getPath(el){
 
 	  } else if(document.getElementsByClassName(currentEl.className).length == 1){
 
-		path = currentEl.tagName.toLowerCase() + '.' + currentEl.className + ' ' + path;
+		path = currentEl.tagName.toLowerCase() + '.' + currentEl.className.split(' ').join('.') + ' ' + path;
 
 	  } else if(document.getElementsByTagName(currentEl.tagName).length == 1){
 
@@ -26,5 +24,5 @@ function getPath(el){
 	  if (currentEl.tagName == 'HTML') break;
 	}
 	
-	return path;
+	return path.trim();
 }  
