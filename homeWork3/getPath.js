@@ -1,6 +1,3 @@
-const { JSDOM } = require("jsdom");
-
-
 function getPath(currentEl, doc){
 	let path = '';
 
