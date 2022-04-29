@@ -1,4 +1,7 @@
-function getPath(currentEl){
+const { JSDOM } = require("jsdom");
+
+
+function getPath(currentEl, doc){
 	let path = '';
 
 	while (true) {
@@ -6,11 +9,11 @@ function getPath(currentEl){
 
 		path = currentEl.tagName.toLowerCase() + '#' + currentEl.id + ' ' + path;
 
-	  } else if(document.getElementsByClassName(currentEl.className).length == 1){
+	  } else if(doc.getElementsByClassName(currentEl.className).length == 1){
 
 		path = currentEl.tagName.toLowerCase() + '.' + currentEl.className.split(' ').join('.') + ' ' + path;
 
-	  } else if(document.getElementsByTagName(currentEl.tagName).length == 1){
+	  } else if(doc.getElementsByTagName(currentEl.tagName).length == 1){
 
 		path = currentEl.tagName.toLowerCase() + ' '  + path;
 
@@ -26,3 +29,5 @@ function getPath(currentEl){
 	
 	return path.trim();
 }  
+
+module.exports = getPath;
