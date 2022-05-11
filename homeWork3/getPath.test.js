@@ -27,7 +27,7 @@ const dom = new JSDOM(`<!DOCTYPE html>
 		</div>
 	</body>`);
 
-const findEl = dom.window.document.querySelector("#elem"); 
+const findEl = document.querySelector("#elem"); 
 
 
 
@@ -35,12 +35,12 @@ describe("getPath should works", () => {
 
   it("getPath should return string", () => {
 
-   expect(typeof(getPath(findEl,dom.window.document))).toBe('string');
+   expect(typeof(getPath(findEl))).toBe('string');
 
   });
   it("querySelectorAll for getPath should return 1 item", function() {
 
-	expect(Array.from(dom.window.document.querySelectorAll(getPath(findEl, dom.window.document))).length).toBe(1);
+	expect(Array.from(document.querySelectorAll(getPath(findEl))).length).toBe(1);
 
   });
 

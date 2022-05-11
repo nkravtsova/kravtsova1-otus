@@ -1,4 +1,4 @@
-function getPath(currentEl, doc){
+function getPath(currentEl){
 	let path = '';
 
 	while (true) {
@@ -6,11 +6,11 @@ function getPath(currentEl, doc){
 
 		path = currentEl.tagName.toLowerCase() + '#' + currentEl.id + ' ' + path;
 
-	  } else if(doc.getElementsByClassName(currentEl.className).length == 1){
+	  } else if(document.getElementsByClassName(currentEl.className).length == 1){
 
 		path = currentEl.tagName.toLowerCase() + '.' + currentEl.className.split(' ').join('.') + ' ' + path;
 
-	  } else if(doc.getElementsByTagName(currentEl.tagName).length == 1){
+	  } else if(document.getElementsByTagName(currentEl.tagName).length == 1){
 
 		path = currentEl.tagName.toLowerCase() + ' '  + path;
 
