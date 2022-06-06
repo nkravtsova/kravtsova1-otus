@@ -6,7 +6,7 @@ const path = require("path");
 const unsortedLargeFile = path.join(__dirname,'unsortedLarge.txt');
 const sortedLargeFile = path.join(__dirname,'sortedLarge.txt');
  
-const inputStream = fs.createReadStream(unsortedLargeFile,{encoding:'utf8', highWaterMark: 52428800});
+const inputStream = fs.createReadStream(unsortedLargeFile,{encoding:'utf8', highWaterMark: 5242880});
 const outputStream = fs.createWriteStream(sortedLargeFile);
 
 let lastElArrayFromChunk = '';
