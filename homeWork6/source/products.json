@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "62b413ef7de279d4ec96dc49"
+  },
+  "name": "Thinking Cap new",
+  "description": "Improve brain efficiency by 75% new",
+  "categoryId": {
+    "$oid": "62b1b51250cdf25a86ed2686"
+  },
+  "price": 15
+},{
+  "_id": {
+    "$oid": "62b4145c7de279d4ec96dc4d"
+  },
+  "name": "Football tishirt M size new",
+  "description": "new",
+  "categoryId": {
+    "$oid": "62b40dea3a00344804d4fb3a"
+  },
+  "price": 20
+},{
+  "_id": {
+    "$oid": "62b42d8e50cdf25a86ed26ab"
+  },
+  "name": "Soccer Ball",
+  "price": {
+    "$numberDecimal": "19.50"
+  },
+  "categoryId": {
+    "$oid": "62b1b57550cdf25a86ed2685"
+  },
+  "description": "FIFA-approved size and weight"
+},{
+  "_id": {
+    "$oid": "62b42d9350cdf25a86ed26ac"
+  },
+  "name": "Corner Flags",
+  "price": {
+    "$numberDecimal": "34.95"
+  },
+  "categoryId": {
+    "$oid": "62b1b51250cdf25a86ed2685"
+  },
+  "description": "Give your playing field a professional touchn"
+},{
+  "_id": {
+    "$oid": "62b42e4850cdf25a86ed26ad"
+  },
+  "name": "Thinking Cap new",
+  "price": 15,
+  "categoryId": {
+    "$oid": "62b1b51250cdf25a86ed2686"
+  },
+  "description": "Improve brain efficiency by 75% new"
+},{
+  "_id": {
+    "$oid": "62b58d6e50cdf25a86ed26be"
+  },
+  "name": "Thinking Cap new3",
+  "price": 15,
+  "categoryId": {
+    "$oid": "62b1b51250cdf25a86ed2686"
+  },
+  "description": "Improve brain efficiency by 75% new3"
+},{
+  "_id": {
+    "$oid": "62b58ea650cdf25a86ed26bf"
+  },
+  "name": "Corner Flags",
+  "price": {
+    "$numberDecimal": "34.95"
+  },
+  "categoryId": {
+    "$oid": "62b1b51250cdf25a86ed2685"
+  },
+  "description": "Give your playing field a professional touchn"
+},{
+  "_id": {
+    "$oid": "62b5959450cdf25a86ed26c0"
+  },
+  "name": "Football boots",
+  "description": "Boots for playng",
+  "categoryId": {
+    "$oid": "62b40dea3a00344804d4fb3a"
+  },
+  "price": 85.55
+},{
+  "_id": {
+    "$oid": "62b595a450cdf25a86ed26c1"
+  },
+  "name": "Soccer Ball",
+  "price": {
+    "$numberDecimal": "19.50"
+  },
+  "categoryId": {
+    "$oid": "62b1b57550cdf25a86ed2685"
+  },
+  "description": "FIFA-approved size and weight"
+}]

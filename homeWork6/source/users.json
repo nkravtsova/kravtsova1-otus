@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "62b41926f856404ee827c15a"
+  },
+  "name": "Test user10",
+  "email": "test1@mail.ru",
+  "is_active": true
+},{
+  "_id": {
+    "$oid": "62b4320c50cdf25a86ed26ae"
+  },
+  "name": "Test user3 new3",
+  "email": "test_user3@google.com",
+  "is_active": true
+},{
+  "_id": {
+    "$oid": "62b43b5f4e9bb3f2bc297a00"
+  },
+  "name": "Test user2",
+  "email": "test2@mail.ru",
+  "is_active": false
+}]
