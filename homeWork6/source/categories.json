@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "62b1b51250cdf25a86ed2683"
+  },
+  "name": "Watersports"
+},{
+  "_id": {
+    "$oid": "62b1b57550cdf25a86ed2685"
+  },
+  "name": "Soccer"
+},{
+  "_id": {
+    "$oid": "62b1b59150cdf25a86ed2686"
+  },
+  "name": "Chess"
+},{
+  "_id": {
+    "$oid": "62b40dea3a00344804d4fb3a"
+  },
+  "name": "Footboll"
+}]
