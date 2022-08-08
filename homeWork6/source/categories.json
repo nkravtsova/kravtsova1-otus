@@ -1,4 +1,4 @@
-[{
+{"categories": [{
   "_id": {
     "$oid": "62b1b51250cdf25a86ed2683"
   },
@@ -18,4 +18,4 @@
     "$oid": "62b40dea3a00344804d4fb3a"
   },
   "name": "Footboll"
-}]
+}]}
