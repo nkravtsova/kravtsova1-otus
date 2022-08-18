@@ -1,0 +1,16 @@
+{
+  "name": "homework8",
+  "version": "1.0.0",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.9"
+  }
+}
