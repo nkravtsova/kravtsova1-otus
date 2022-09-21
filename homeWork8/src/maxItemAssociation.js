@@ -31,4 +31,5 @@ function maxItemAssociation(arr) {
         return "Массив не определен";
     }
 }
+module.exports = maxItemAssociation;
 console.log(maxItemAssociation([["q", "w", 'a'], ["a", "b"], ["a", "c"], ["q", "e"], ["q", "r"],]));
