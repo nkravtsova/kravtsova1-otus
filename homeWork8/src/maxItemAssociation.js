@@ -1,14 +1,14 @@
 function maxItemAssociation(arr) {
     if (arr) {
-        let groups = new Set();
-        for (let itemArray of arr) {
+        const groups = new Set();
+        for (const itemArray of arr) {
             if (groups.size == 0) {
                 groups.add(new Set(itemArray));
             }
             else {
-                for (let itemSet of groups) {
+                for (const itemSet of groups) {
                     let addArray = false;
-                    for (let itemGroups of itemSet) {
+                    for (const itemGroups of itemSet) {
                         if (itemArray.includes(itemGroups)) {
                             itemArray.forEach(a => itemSet.add(a));
                             addArray = true;
@@ -19,8 +19,8 @@ function maxItemAssociation(arr) {
                 }
             }
         }
-        let result = [];
-        for (let itemSet of groups)
+        const result = [];
+        for (const itemSet of groups)
             result.push(Array.from(itemSet).sort());
         result.sort(function (a, b) {
             return b.length - a.length || a[0].localeCompare(b[0]);
@@ -31,5 +31,5 @@ function maxItemAssociation(arr) {
         return "Массив не определен";
     }
 }
-module.exports = maxItemAssociation;
+export { maxItemAssociation };
 console.log(maxItemAssociation([["q", "w", 'a'], ["a", "b"], ["a", "c"], ["q", "e"], ["q", "r"],]));

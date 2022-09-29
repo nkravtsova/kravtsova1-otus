@@ -1,5 +1,5 @@
-const tsNode = require('ts-node');
-const testTSConfig = require('./test/tsconfig.json');
+import tsNode from 'ts-node';
+import testTSConfig from './test/tsconfig.json' assert {type:"json"};
 
 tsNode.register({
   files: true,

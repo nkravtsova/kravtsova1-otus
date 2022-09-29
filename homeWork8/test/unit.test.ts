@@ -1,19 +1,19 @@
-let expect = require('chai').expect;
-const maxItemAssociation =require('../src/maxItemAssociation');
+import { expect } from 'chai';
+import { maxItemAssociation } from "../src/maxItemAssociation.js";
 
 describe("maxItemAssociation should works", () => {
 
-  it("maxItemAssociation should return object", () => {
-         expect(typeof maxItemAssociation([["q", "w", 'a'],["a", "b"],["a", "c"],["q", "e"],["q", "r"],])).to.be.equal('object');
-  });
+	it("maxItemAssociation should return object", () => {
+		expect(typeof maxItemAssociation([["q", "w", 'a'],["a", "b"],["a", "c"],["q", "e"],["q", "r"],])).to.be.equal('object');
+	});
 
-  it("maxItemAssociation([['q', 'w', 'a'],['a', 'b'],['a', 'c'],['q', 'e'],['q', 'r'],]) should return 7 items", () => {
+	it("maxItemAssociation([['q', 'w', 'a'],['a', 'b'],['a', 'c'],['q', 'e'],['q', 'r'],]) should return 7 items", () => {
 
-	expect(maxItemAssociation([["q", "w", 'a'],["a", "b"],["a", "c"],["q", "e"],["q", "r"],]).length).to.be.equal(7);;
-  });
+		expect(maxItemAssociation([["q", "w", 'a'],["a", "b"],["a", "c"],["q", "e"],["q", "r"],]).length).to.be.equal(7);
+	});
 
-  it("maxItemAssociation() should return message", () => {
+	it("maxItemAssociation() should return message", () => {
 
-	expect(typeof maxItemAssociation()).to.be.equal('string');;
-  });
+		expect(typeof maxItemAssociation()).to.be.equal('string');
+	});
 });
