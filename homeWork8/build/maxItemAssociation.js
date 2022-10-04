@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.maxItemAssociation = void 0;
 function maxItemAssociation(arr) {
     if (arr) {
         const groups = new Set();
@@ -31,5 +34,5 @@ function maxItemAssociation(arr) {
         return "Массив не определен";
     }
 }
-export { maxItemAssociation };
+exports.maxItemAssociation = maxItemAssociation;
 console.log(maxItemAssociation([["q", "w", 'a'], ["a", "b"], ["a", "c"], ["q", "e"], ["q", "r"],]));

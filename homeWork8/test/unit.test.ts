@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { maxItemAssociation } from "../src/maxItemAssociation.js";
+import { maxItemAssociation } from "../src/maxItemAssociation";
 
 describe("maxItemAssociation should works", () => {
 
