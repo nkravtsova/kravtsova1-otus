@@ -3,6 +3,8 @@
 	"compilerOptions": {
 		"baseUrl": "./",
 		"module": "commonjs",
+		"target": "esnext",
+		"esModuleInterop": true,
 		"experimentalDecorators": true,
 		"strictPropertyInitialization": false,
 		"isolatedModules": false,

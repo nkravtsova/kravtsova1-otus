@@ -1,5 +1,5 @@
-import { expect } from 'chai';
-import { maxItemAssociation } from "../src/maxItemAssociation";
+const { expect } = require ('chai');
+const { maxItemAssociation } = require("../build/maxItemAssociation");
 
 describe("maxItemAssociation should works", () => {
 
